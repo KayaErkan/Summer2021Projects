@@ -16,6 +16,7 @@ public class removeDuplicates {
 
         Array is 1,2,2,2,3,3,3,4,4,4,5,5,5
 
+//1 2 2 2 3 3 3 4 4 4 5 5 5
         result should be 5
 
         NOTE: while printing the result dont use for loop
@@ -35,6 +36,8 @@ public class removeDuplicates {
 
        Array is 1,2,2,2,3,3,3,4,4,4,5,5,5
 
+       //1 2 2 2 3 3 3 4 4 4 5 5 5
+
        result  5 olmalı
 
        NOT: resultu print ederken for loop kullanmayın
@@ -50,7 +53,7 @@ public class removeDuplicates {
 
         int[] useThisArray = new int[arr.length];
 
-        for (int i = 0; i < useThisArray.length; i++) {
+        for(int i = 0 ; i < useThisArray.length ; i++){
 
             int num = Integer.parseInt(arr[i]);
 
@@ -58,7 +61,23 @@ public class removeDuplicates {
 
         }
 
-        //        Kodunuzu yazmaya  bu satırdan itibaren yazınız.
+//        code start here
+//        dont change anything before this line
+//        your Array is useThisLine
+
+      // Kodlamaya burdan başla.bu satırdan önceki satirlarda hicbirşeyi  degiştirme.
+      //   useThisLine arrayini kullan
+       int n=useThisArray.length;
+        int[]temp=new int[n];
+        int j=0;
+        for (int i = 0; i <n-1 ; i++) {
+            if(useThisArray[i]!=useThisArray[i+1]){
+                temp[j++]=useThisArray[i];
+            }
+
+        }
+        temp[j++]=useThisArray[n-1];
+        System.out.println(Arrays.toString(temp));
     }
 
 

@@ -38,12 +38,18 @@ public class sameFirstAndLast {
 
         String[] useThisArray = myStr.split(" ");
 
-        //        Kodunuzu yazmaya  bu satırdan itibaren yazınız.
+      //        code start here
 
+      // Koda burdan başlayin
+
+        if(useThisArray[0].equals(useThisArray[useThisArray.length-1])){
+            System.out.println("true");
+        }else{
+            System.out.println("false");
+        }
 
 
     }
+
+
 }
-
-
-

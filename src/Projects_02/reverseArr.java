@@ -21,7 +21,11 @@ public class reverseArr {
 
     /*
 
-          Verilen String array  String arrayi ters çevir ters arrayi yazdır
+          Verilen String array
+
+         String arrayi ters çevir
+
+         ters arrayi yazdır
 
        NOT:
        Arrays.toString(your_array_name);  <--- kullanın
@@ -37,7 +41,23 @@ public class reverseArr {
 
         String[] useThisArray = myStr.split(" ");
 
-        //        Kodunuzu yazmaya  bu satırdan itibaren yazınız.
+     //        code start here
+
+     //        Koda burdan başlayın
+
+
+        String[] reversed = new String[useThisArray.length];
+
+        int counter = 0 ;
+
+        for(int i = useThisArray.length-1 ; i >=0 ; i--){
+
+            reversed[counter++] = useThisArray[i];
+
+        }
+
+
+        System.out.println(Arrays.toString(reversed));
     }
 
 }

@@ -39,8 +39,20 @@ public class changeArray {
         String myStr = scan.nextLine();
         String[] UseThisArray = myStr.split(" ");
 
-//        Kodunuzu yazmaya  bu satırdan itibaren yazınız.
+//        Koda burdan başla
+//        kullanman gereken -> UseThisArray
 
+
+        for(int i = 0 ; i<UseThisArray.length ; i++){
+
+            if(UseThisArray[i].equals("Orange")){
+                UseThisArray[i] = "Apple";
+
+            }
+
+        }
+
+        System.out.println(Arrays.toString(UseThisArray));
 
     }
 }
